@@ -1,13 +1,10 @@
-[project]
+[tool.poetry]
 name = "mlops-churn"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Paulo",email = "30201880+phnascimento2@users.noreply.github.com."}
-]
-readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
+description = "Customer churn prediction system with full MLOps pipeline"
+authors = ["Paulo, <30201880+phnascimento2@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.2"
 scikit-learn = "^1.5"
@@ -18,9 +15,8 @@ hydra-core = "^1.3"
 fastapi = "^0.115"
 uvicorn = "^0.30"
 prefect = "^2.20"
-feast = "^0.37"
-dvc = "^3.50
-]
+feast = "^0.40"
+dvc = "^3.50"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3"
@@ -29,6 +25,3 @@ mypy = "^1.11"
 flake8 = "^7.0"
 isort = "^5.13"
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
